@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**ℍɪɪ** ┈━═𝗠𝗬 𝗧𝗫𝗧 𝗟𝗢𝗩𝗘𝗥═━┈🙈❤️\n\n𝗜 𝗔𝗠 𝗔 𝗕𝗢𝗧 𝗙𝗢𝗥 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗟𝗜𝗡𝗞𝗦 𝗙𝗥𝗢𝗠 𝗬𝗢𝗨𝗥 **.𝗧𝗫𝗧** 𝗙𝗜𝗟𝗘 𝗔𝗡𝗗 𝗧𝗛𝗘𝗡 𝗨𝗣𝗟𝗢𝗔𝗗 𝗧𝗛𝗔𝗧 𝗙𝗜𝗟𝗘 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 𝗦𝗢 𝗕𝗔𝗦𝗜𝗖𝗔𝗟𝗟𝗬 𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗠𝗘 𝗙𝗜𝗥𝗦𝗧 𝗦𝗘𝗡𝗗 𝗠𝗘 /upload  𝗕𝗢𝗧 𝗠𝗔𝗗 𝗕𝗬 👀💙 @hemendra148 𝗛𝗘𝗠𝗨 𝗔𝗥𝗠𝗬 ..")
+    editable = await m.reply_text("**ℍɪɪ** ┈━═𝗠𝗬 𝗧𝗫𝗧 𝗟𝗢𝗩𝗘𝗥═━┈🙈❤️\n\n𝗜 𝗔𝗠 𝗔 𝗕𝗢𝗧 𝗙𝗢𝗥 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗟𝗜𝗡𝗞𝗦 𝗙𝗥𝗢𝗠 𝗬𝗢𝗨𝗥 **.𝗧𝗫𝗧** 𝗙𝗜𝗟𝗘 𝗔𝗡𝗗 𝗧𝗛𝗘𝗡 𝗨𝗣𝗟𝗢𝗔𝗗 𝗧𝗛𝗔𝗧 𝗙𝗜𝗟𝗘 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 𝗦𝗢 𝗕𝗔𝗦𝗜𝗖𝗔𝗟𝗟𝗬 𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗠𝗘 𝗙𝗜𝗥𝗦𝗧 𝗦𝗘𝗡𝗗 𝗠𝗘 /daku  𝗕𝗢𝗧 𝗠𝗔𝗗 𝗕𝗬 👀💙 @sccwaleyarr ❤️‍🔥BOT MASTER™❤️‍🔥 ..")
 
 
 @bot.on_message(filters.command("stop"))
@@ -41,9 +41,9 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["upload"]))
+@bot.on_message(filters.command(["Daku"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text('𝗜𝗧𝗦 𝗛𝗘𝗠𝗨 𝗕𝗢𝗧 𝗛𝗘𝗥𝗘 𝗦𝗘𝗡𝗗 𝗧𝗫𝗧 𝗙𝗜𝗟𝗘 🗂 ⚡️ ⚡️')
+    editable = await m.reply_text('𝗜𝗧𝗦 @sccwaleyarr 𝗕𝗢𝗧 𝗛𝗘𝗥𝗘 𝗦𝗘𝗡𝗗 𝗧𝗫𝗧 𝗙𝗜𝗟𝗘 🗂 ⚡️ ⚡️')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -110,7 +110,7 @@ async def account_login(bot: Client, m: Message):
     else:
         MR = raw_text3
    
-    await editable.edit("𝗡𝗢𝗪 𝗦𝗘𝗡𝗗 𝗠𝗘 𝗧𝗛𝗘 🖼️ 𝗧𝗛𝗨𝗠𝗕𝗡𝗔𝗜𝗟 𝗨𝗥𝗟/nEg » https://graph.org/file/05be568f195e32e75f32f.jpg \n 𝗢𝗥 𝗜𝗙 𝗗𝗢𝗡'𝗧 𝗪𝗔𝗡𝗧 𝗧𝗛𝗨𝗠𝗕𝗡𝗔𝗜𝗟 𝗦𝗘𝗡𝗗 = no")
+    await editable.edit("𝗡𝗢𝗪 𝗦𝗘𝗡𝗗 𝗠𝗘 𝗧𝗛𝗘 🖼️ 𝗧𝗛𝗨𝗠𝗕𝗡𝗔𝗜𝗟 𝗨𝗥𝗟/nEg » https://graph.org/file/608b035016f8187f8a71c.jpg \n 𝗢𝗥 𝗜𝗙 𝗗𝗢𝗡'𝗧 𝗪𝗔𝗡𝗧 𝗧𝗛𝗨𝗠𝗕𝗡𝗔𝗜𝗟 𝗦𝗘𝗡𝗗 = no")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -206,7 +206,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("**𝔻ᴏɴᴇ 𝔹ᴏ𝕤𝕤😎**")
+    await m.reply_text("**𝔻ᴏɴᴇ🚦🚦**")
 
 
 bot.run()
