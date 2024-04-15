@@ -31,19 +31,19 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**ℍɪɪ** ┈━═My Freind═━┈😎\n\n I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me /upload Command And Then Follow Few Steps..")
+    editable = await m.reply_text("**ℍɪɪ** ┈━═𝗠𝗬 𝗧𝗫𝗧 𝗟𝗢𝗩𝗘𝗥═━┈🙈❤️\n\n𝗜 𝗔𝗠 𝗔 𝗕𝗢𝗧 𝗙𝗢𝗥 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗟𝗜𝗡𝗞𝗦 𝗙𝗥𝗢𝗠 𝗬𝗢𝗨𝗥 **.𝗧𝗫𝗧** 𝗙𝗜𝗟𝗘 𝗔𝗡𝗗 𝗧𝗛𝗘𝗡 𝗨𝗣𝗟𝗢𝗔𝗗 𝗧𝗛𝗔𝗧 𝗙𝗜𝗟𝗘 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 𝗦𝗢 𝗕𝗔𝗦𝗜𝗖𝗔𝗟𝗟𝗬 𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗠𝗘 𝗙𝗜𝗥𝗦𝗧 𝗦𝗘𝗡𝗗 𝗠𝗘 /upload  𝗕𝗢𝗧 𝗠𝗔𝗗 𝗕𝗬 👀💙 @hemendra148 𝗛𝗘𝗠𝗨 𝗔𝗥𝗠𝗬 ..")
 
 
 @bot.on_message(filters.command("stop"))
 async def restart_handler(_, m):
-    await m.reply_text("**Stopped**🚦", True)
+    await m.reply_text("**𝗦𝗧𝗢𝗢𝗣𝗘𝗗**🚦", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 
 @bot.on_message(filters.command(["upload"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text('𝕋𝕆 ᴅᴏᴡɴʟᴏᴀᴅ ᴀ ᴛxᴛ ғɪʟᴇ 𝕤ᴇɴᴅ ʜᴇʀᴇ ⚡️')
+    editable = await m.reply_text('𝗜𝗧𝗦 𝗛𝗘𝗠𝗨 𝗕𝗢𝗧 𝗛𝗘𝗥𝗘 𝗦𝗘𝗡𝗗 𝗧𝗫𝗧 𝗙𝗜𝗟𝗘 🗂 ⚡️ ⚡️')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -65,18 +65,18 @@ async def account_login(bot: Client, m: Message):
            return
     
    
-    await editable.edit(f"**𝕋ᴏᴛᴀʟ ʟɪɴᴋ𝕤 ғᴏᴜɴᴅ ᴀʀᴇ🔗🔗** **{len(links)}**\n\n**𝕊ᴇɴᴅ 𝔽ʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴɪᴛɪᴀʟ ɪ𝕤** **1**")
+    await editable.edit(f"**𝗧𝗢𝗧𝗔𝗟 𝗟𝗜𝗡𝗞𝗦 𝗙𝗢𝗨𝗡𝗗 𝗜𝗡 𝗧𝗫𝗧 𝗙𝗜𝗟𝗘 𝗔𝗥𝗘 🔗🔗** **{len(links)}**\n\n**✍️ 𝗡𝗢𝗪 𝗦𝗘𝗡𝗗 𝗠𝗘 𝗙𝗥𝗢𝗠 𝗪𝗛𝗘𝗥𝗘 𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗜𝗡𝗜𝗧𝗜𝗔𝗟 𝗜𝗦** **1**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
 
-    await editable.edit("**Now Please Send Me Your Batch Name**")
+    await editable.edit("**𝗘𝗡𝗧𝗘𝗥 𝗬𝗢𝗨𝗥 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
     
 
-    await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸**\n144,240,360,480,720,1080 please choose quality")
+    await editable.edit("**𝗘𝗡𝗧𝗘𝗥 𝗥𝗘𝗦𝗢𝗟𝗨𝗧𝗜𝗢𝗡 𝗙𝗢𝗥 𝗨𝗥 𝗟𝗘𝗖𝗧𝗨𝗥𝗘𝗦 🎬📸**\n144,240,360,480,720,1080 𝗣𝗟𝗘𝗔𝗦𝗘 𝗖𝗛𝗢𝗢𝗦𝗘 𝗤𝗨𝗔𝗟𝗜𝗧𝗬")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -100,7 +100,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("Now Enter A Caption to add caption on your uploaded file")
+    await editable.edit("𝗘𝗡𝗧𝗘𝗥 𝗨𝗥 𝗡𝗔𝗠𝗘 ✍️ 𝗔𝗦 𝗔 𝗛𝗜𝗚𝗛𝗟𝗜𝗚𝗛𝗧𝗘𝗥 💋 𝗧𝗢 𝗟𝗘𝗖𝗧𝗨𝗥𝗘𝗦 🥹❤️")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -110,7 +110,7 @@ async def account_login(bot: Client, m: Message):
     else:
         MR = raw_text3
    
-    await editable.edit("Now send the Thumb url/nEg » https://telegra.ph/file/1bf523c4b51530e57e84d.jpg \n Or if don't want thumbnail send = no")
+    await editable.edit("𝗡𝗢𝗪 𝗦𝗘𝗡𝗗 𝗠𝗘 𝗧𝗛𝗘 🖼️ 𝗧𝗛𝗨𝗠𝗕𝗡𝗔𝗜𝗟 𝗨𝗥𝗟/nEg » https://graph.org/file/05be568f195e32e75f32f.jpg \n 𝗢𝗥 𝗜𝗙 𝗗𝗢𝗡'𝗧 𝗪𝗔𝗡𝗧 𝗧𝗛𝗨𝗠𝗕𝗡𝗔𝗜𝗟 𝗦𝗘𝗡𝗗 = no")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
