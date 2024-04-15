@@ -22,11 +22,11 @@ from pyrogram.types.messages_and_media import message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
-bot = Client(
-    "bot",
-    api_id=api_id,
-    api_hash=api_hash,
-    bot_token=bot_token)
+bot = Client("bot",
+             bot_token= "7092396095:AAF_jP7qZx_cC0esduKkPafHGt9vhsrWxiM",
+             api_id= 25298674,
+             api_hash= "1a7e01278b2bf0fe975fb8ce7c5ead8d"
+)
 
 
 @bot.on_message(filters.command(["start"]))
@@ -46,8 +46,10 @@ async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('𝗜𝗧𝗦 𝗛𝗘𝗠𝗨 𝗕𝗢𝗧 𝗛𝗘𝗥𝗘 𝗦𝗘𝗡𝗗 𝗧𝗫𝗧 𝗙𝗜𝗟𝗘 🗂 ⚡️')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
-    await input.delete(True)
-
+        await bot.send_document(-1002095973382, x)
+        await input.delete(True)
+        file_name, ext = os.path.splitext(os.path.basename(x))
+   
     path = f"./downloads/{m.chat.id}"
 
     try:
@@ -63,7 +65,13 @@ async def account_login(bot: Client, m: Message):
            await m.reply_text("**Invalid file input.**")
            os.remove(x)
            return
-    
+    else:
+        content = input.text
+        content = content.split("\n")
+        links = []
+        for i in content:
+            links.append(i.split("://", 1))
+   
    
     await editable.edit(f"**𝗧𝗢𝗧𝗔𝗟 𝗟𝗜𝗡𝗞𝗦 𝗙𝗢𝗨𝗡𝗗 𝗜𝗡 𝗧𝗫𝗧 𝗙𝗜𝗟𝗘 𝗔𝗥𝗘 🔗🔗** **{len(links)}**\n\n**✍️ 𝗡𝗢𝗪 𝗦𝗘𝗡𝗗 𝗠𝗘 𝗙𝗥𝗢𝗠 𝗪𝗛𝗘𝗥𝗘 𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗜𝗡𝗜𝗧𝗜𝗔𝗟 𝗜𝗦** **1**")
     input0: Message = await bot.listen(editable.chat.id)
